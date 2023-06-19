@@ -1,0 +1,19 @@
+-- Create the database
+CREATE DATABASE your_database;
+
+-- Use the database
+USE your_database;
+
+-- Create the table for tank data
+CREATE TABLE tank_data (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    value DECIMAL(10, 2),
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create the table for motor status
+CREATE TABLE motor_status (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    status BOOLEAN,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
